@@ -18803,7 +18803,7 @@ async function run() {
     context,
     `@${
       context.sender.login
-    } set a reminder for **${reminder.when.toLocaleDateString()}**`
+    } set a reminder for **${reminder.when.toLocaleString()}**`
   );
   core.endGroup();
 }
