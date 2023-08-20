@@ -99,14 +99,14 @@ function getReminder(context) {
     return null;
   }
   let prompt = remindLine.slice(1);
-  console.log('prompt ', prompt);
+  console.log('prompt', prompt);
   console.log('current date and time', new Date());
   const reminder = parseReminder(prompt);
 
   if (!reminder) {
     throw new Error(`Unable to parse reminder: remind ${body}`);
   } else {
-    console.log('reminder ', reminder);
+    console.log('reminder', reminder);
   }
 
   if (reminder.who === 'me') {

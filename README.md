@@ -1,3 +1,7 @@
+# About this fork
+
+This fork contains custom logic for parsing the reminder text over the [parse-reminder](https://github.com/bkeepers/parse-reminder) library (see [utilities.js](utilities.js)) and supports more time units like hours and minutes.
+
 # Create a Reminder Action
 
 [![Push Events](https://github.com/agrc/create-reminder-action/actions/workflows/push.yml/badge.svg)](https://github.com/agrc/create-reminder-action/actions/workflows/push.yml)

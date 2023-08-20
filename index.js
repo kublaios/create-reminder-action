@@ -84,7 +84,7 @@ async function run() {
     context,
     `@${
       context.sender.login
-    } set a reminder for **${reminder.when.toLocaleString()}**`
+    } set a reminder for **${reminder.when.toLocaleString()}** UTC`
   );
   core.endGroup();
 }
