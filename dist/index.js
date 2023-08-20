@@ -9537,14 +9537,14 @@ function getReminder(context) {
     return null;
   }
   let prompt = remindLine.slice(1);
-  console.log('prompt ', prompt);
+  console.log('prompt', prompt);
   console.log('current date and time', new Date());
   const reminder = parseReminder(prompt);
 
   if (!reminder) {
     throw new Error(`Unable to parse reminder: remind ${body}`);
   } else {
-    console.log('reminder ', reminder);
+    console.log('reminder', reminder);
   }
 
   if (reminder.who === 'me') {
@@ -9851,7 +9851,7 @@ async function run() {
     context,
     `@${
       context.sender.login
-    } set a reminder for **${reminder.when.toLocaleString()}**`
+    } set a reminder for **${reminder.when.toLocaleString()}** UTC`
   );
   core.endGroup();
 }
