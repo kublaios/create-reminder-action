@@ -84,7 +84,7 @@ async function run() {
     context,
     `@${
       context.sender.login
-    } set a reminder for **${reminder.when.toLocaleString()}** UTC`
+    } set a reminder for **${reminder.when.toLocaleString()} UTC**.\n\nKeep in mind that reminders are posted based on the frequency of the workflow and will not fire at the exact time specified.`
   );
   core.endGroup();
 }
