@@ -29,11 +29,17 @@ function getReminder(context, referenceDate = null) {
   if (remindLine === null) {
     return null;
   }
-
-  const reminder = parseReminder(remindLine.slice(1), referenceDate);
+  console.log('current reference date ', referenceDate);
+  let finalReferenceDate = new Date();
+  console.log('final reference date ', finalReferenceDate);
+  let prompt = remindLine.slice(1);
+  console.log('prompt ', prompt);
+  const reminder = parseReminder(prompt, finalReferenceDate);
 
   if (!reminder) {
     throw new Error(`Unable to parse reminder: remind ${body}`);
+  } else {
+    console.log('reminder ', reminder);
   }
 
   if (reminder.who === 'me') {
